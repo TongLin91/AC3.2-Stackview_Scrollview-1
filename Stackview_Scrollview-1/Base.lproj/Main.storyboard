@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AJj-1N-Bh2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="282-Ny-h42">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -177,6 +177,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iPk-73-KkS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1750" y="-192"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="RKI-QM-d3l">
+            <objects>
+                <viewController id="Ycq-L3-76U" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zcG-Md-IZe"/>
+                        <viewControllerLayoutGuide type="bottom" id="RvS-9f-dxK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ILe-jQ-IlO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9R-UB-Z5O">
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Pi1-Ya-1K2">
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="0jH-uK-Fpf"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Squirtle" translatesAutoresizingMaskIntoConstraints="NO" id="25G-Dv-w1J"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bulbasaur" translatesAutoresizingMaskIntoConstraints="NO" id="zl4-qg-g4a"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Charmander" translatesAutoresizingMaskIntoConstraints="NO" id="xfu-rD-sWd"/>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottomMargin" secondItem="Pi1-Ya-1K2" secondAttribute="bottom" constant="8" id="1Kl-aX-THa"/>
+                                    <constraint firstItem="Pi1-Ya-1K2" firstAttribute="leading" secondItem="y9R-UB-Z5O" secondAttribute="leadingMargin" constant="8" id="9sl-le-ADs"/>
+                                    <constraint firstItem="Pi1-Ya-1K2" firstAttribute="centerY" secondItem="y9R-UB-Z5O" secondAttribute="centerY" id="Weq-BO-p0h"/>
+                                    <constraint firstItem="Pi1-Ya-1K2" firstAttribute="top" secondItem="y9R-UB-Z5O" secondAttribute="topMargin" constant="8" id="nBE-vE-4AI"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Pi1-Ya-1K2" secondAttribute="trailing" constant="8" id="ud4-7Q-C4T"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84554952291578789" green="0.80530390228897009" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="y9R-UB-Z5O" firstAttribute="leading" secondItem="ILe-jQ-IlO" secondAttribute="leadingMargin" id="AQb-fe-x3f"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="y9R-UB-Z5O" secondAttribute="trailing" id="aBM-yF-wMM"/>
+                            <constraint firstItem="y9R-UB-Z5O" firstAttribute="top" secondItem="ILe-jQ-IlO" secondAttribute="topMargin" id="pGP-LW-3wb"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="esU-dg-dlI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q75-3g-hLu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5042.3999999999996" y="-261.31934032983509"/>
         </scene>
         <!--Item-->
         <scene sceneID="Hyi-Cb-Kwg">
@@ -370,5 +415,28 @@
             </objects>
             <point key="canvasLocation" x="964" y="-233.43328335832086"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="VwZ-aZ-Bp2">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="282-Ny-h42" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ZGB-r7-wal">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Ycq-L3-76U" kind="relationship" relationship="viewControllers" id="Qc5-37-LG9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zyw-8q-9dc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4103.1999999999998" y="-261.31934032983509"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Bulbasaur" width="129" height="128"/>
+        <image name="Charmander" width="113" height="129"/>
+        <image name="Pikachu" width="129" height="120"/>
+        <image name="Squirtle" width="103" height="129"/>
+    </resources>
 </document>
