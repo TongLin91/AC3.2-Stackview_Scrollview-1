@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,12 +18,60 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gbD-S1-ttD">
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qa2-cZ-iwA" userLabel="blueView">
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="400" id="Q2v-6v-Cg6"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nex-Z5-DYV" userLabel="orangeView">
+                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="400" id="UCB-b2-3Xx"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7EH-3w-roe" userLabel="redView">
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="400" id="Mkv-Mo-riv"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.16127129287594355" blue="0.88330966874375361" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="nex-Z5-DYV" firstAttribute="top" secondItem="gbD-S1-ttD" secondAttribute="top" constant="100" id="3MU-Hb-5YQ"/>
+                                    <constraint firstItem="nex-Z5-DYV" firstAttribute="leading" secondItem="Qa2-cZ-iwA" secondAttribute="trailing" constant="20" id="Clu-hV-sej"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qa2-cZ-iwA" secondAttribute="bottom" constant="100" id="Gcf-AQ-L9O"/>
+                                    <constraint firstAttribute="trailing" secondItem="7EH-3w-roe" secondAttribute="trailing" constant="20" id="Jdn-ch-MeR"/>
+                                    <constraint firstItem="Qa2-cZ-iwA" firstAttribute="top" secondItem="gbD-S1-ttD" secondAttribute="top" constant="100" id="VhT-pf-TWp"/>
+                                    <constraint firstAttribute="bottom" secondItem="nex-Z5-DYV" secondAttribute="bottom" constant="100" id="gae-WF-0yp"/>
+                                    <constraint firstAttribute="bottom" secondItem="7EH-3w-roe" secondAttribute="bottom" constant="100" id="iQn-4s-jgg"/>
+                                    <constraint firstItem="Qa2-cZ-iwA" firstAttribute="leading" secondItem="gbD-S1-ttD" secondAttribute="leading" constant="20" id="l6E-gB-lbF"/>
+                                    <constraint firstItem="7EH-3w-roe" firstAttribute="top" secondItem="gbD-S1-ttD" secondAttribute="top" constant="100" id="yyY-NT-Jtz"/>
+                                    <constraint firstItem="7EH-3w-roe" firstAttribute="leading" secondItem="nex-Z5-DYV" secondAttribute="trailing" constant="20" id="zZq-BQ-di7"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qa2-cZ-iwA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="9YF-f9-par"/>
+                            <constraint firstItem="gbD-S1-ttD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Fep-Hi-SXn"/>
+                            <constraint firstAttribute="trailing" secondItem="gbD-S1-ttD" secondAttribute="trailing" id="HMp-cl-0Ef"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qa2-cZ-iwA" secondAttribute="bottom" constant="147" id="lMX-JD-6Rw"/>
+                            <constraint firstItem="gbD-S1-ttD" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="vdG-52-m9T"/>
+                            <constraint firstItem="gbD-S1-ttD" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" id="y91-eu-DEj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scrollView" destination="gbD-S1-ttD" id="Q7T-fw-SZN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="964" y="-233"/>
+            <point key="canvasLocation" x="964" y="-233.43328335832086"/>
         </scene>
     </scenes>
 </document>

@@ -186,6 +186,7 @@
 				TargetAttributes = {
 					1451258F1DA1FBDC00A94953 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 7NBTE6SY4Z;
 						ProvisioningStyle = Automatic;
 					};
 					145125A31DA1FBDC00A94953 = {
@@ -381,6 +382,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7NBTE6SY4Z;
 				INFOPLIST_FILE = "Stackview_Scrollview-1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nyc.AccessCode.Stackview-Scrollview-1";
@@ -393,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7NBTE6SY4Z;
 				INFOPLIST_FILE = "Stackview_Scrollview-1/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nyc.AccessCode.Stackview-Scrollview-1";
